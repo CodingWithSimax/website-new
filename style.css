@@ -74,7 +74,7 @@ section .row
     top: -50%;
     width: 100%;
     display: flex;
-    padding: 10px 0;
+    padding: 0px 0;
     white-space: nowrap;
     font-size: 64px;
     transform: rotate(-30deg);
