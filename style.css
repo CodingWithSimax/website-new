@@ -58,6 +58,47 @@ header ul li a.invite
     color: #fff;
     border-radius: 20px;
 }
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: transparent;
+}
+h2
+{
+    position: relative;
+    font-size: 5vw;
+    color: rgba(0, 0, 0, 0.5);
+    -webkit-text-stroke: 0.3w rgb(51, 51, 51);
+    text-transform: uppercase;
+}
+h2::before
+{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: #5865f2;
+    -webkit-text-stroke: 0vw rgb(51, 51, 51);
+    border-right: 2px solid #5865f2;
+    overflow: hidden;
+    animation: animate-t 6s linear infinite;
+}
+@keyframes animate-t
+{
+    0%,10%,100%
+    {
+        width: 0;
+    }
+    70%,90%
+    {
+        width: 100%;
+    }
+}
 section
 {
     position: relative;
